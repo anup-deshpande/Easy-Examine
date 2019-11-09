@@ -9,12 +9,13 @@
 /* Begin PBXBuildFile section */
 		76E1790423776282005C4528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1790323776282005C4528 /* AppDelegate.swift */; };
 		76E1790623776282005C4528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1790523776282005C4528 /* SceneDelegate.swift */; };
-		76E1790823776282005C4528 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1790723776282005C4528 /* ViewController.swift */; };
+		76E1790823776282005C4528 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1790723776282005C4528 /* loginViewController.swift */; };
 		76E1790B23776282005C4528 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E1790923776282005C4528 /* Main.storyboard */; };
 		76E1790D23776284005C4528 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E1790C23776284005C4528 /* Assets.xcassets */; };
 		76E1791023776284005C4528 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E1790E23776284005C4528 /* LaunchScreen.storyboard */; };
 		76E1791B23776284005C4528 /* scopingProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1791A23776284005C4528 /* scopingProjectTests.swift */; };
 		76E1792623776284005C4528 /* scopingProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1792523776284005C4528 /* scopingProjectUITests.swift */; };
+		76E1793523777087005C4528 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1793423777087005C4528 /* QRCodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,7 @@
 		76E1790023776282005C4528 /* scopingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scopingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E1790323776282005C4528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76E1790523776282005C4528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		76E1790723776282005C4528 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		76E1790723776282005C4528 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		76E1790A23776282005C4528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76E1790C23776284005C4528 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76E1790F23776284005C4528 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		76E1792123776284005C4528 /* scopingProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scopingProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E1792523776284005C4528 /* scopingProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scopingProjectUITests.swift; sourceTree = "<group>"; };
 		76E1792723776284005C4528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76E1793423777087005C4528 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,7 @@
 			children = (
 				76E1790323776282005C4528 /* AppDelegate.swift */,
 				76E1790523776282005C4528 /* SceneDelegate.swift */,
-				76E1790723776282005C4528 /* ViewController.swift */,
+				76E17933237763D8005C4528 /* Controllers */,
 				76E1790923776282005C4528 /* Main.storyboard */,
 				76E1790C23776284005C4528 /* Assets.xcassets */,
 				76E1790E23776284005C4528 /* LaunchScreen.storyboard */,
@@ -126,6 +128,15 @@
 				76E1792723776284005C4528 /* Info.plist */,
 			);
 			path = scopingProjectUITests;
+			sourceTree = "<group>";
+		};
+		76E17933237763D8005C4528 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				76E1790723776282005C4528 /* loginViewController.swift */,
+				76E1793423777087005C4528 /* QRCodeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E1790823776282005C4528 /* ViewController.swift in Sources */,
+				76E1790823776282005C4528 /* loginViewController.swift in Sources */,
 				76E1790423776282005C4528 /* AppDelegate.swift in Sources */,
+				76E1793523777087005C4528 /* QRCodeViewController.swift in Sources */,
 				76E1790623776282005C4528 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
