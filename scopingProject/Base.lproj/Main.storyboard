@@ -95,10 +95,22 @@
                     <view key="view" contentMode="scaleToFill" id="iKM-XH-bDQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square" translatesAutoresizingMaskIntoConstraints="NO" id="CA6-S8-LZG">
+                                <rect key="frame" x="69" y="310" width="276" height="276"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="CA6-S8-LZG" firstAttribute="centerX" secondItem="iKM-XH-bDQ" secondAttribute="centerX" id="5An-NR-bBW"/>
+                            <constraint firstItem="CA6-S8-LZG" firstAttribute="centerY" secondItem="iKM-XH-bDQ" secondAttribute="centerY" id="BQQ-YG-Bsh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Kmz-qp-qtK"/>
                     </view>
                     <navigationItem key="navigationItem" id="Nsw-Ab-gfM"/>
+                    <connections>
+                        <outlet property="square" destination="CA6-S8-LZG" id="dde-HV-6SG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3z-ZB-SH9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,5 +137,6 @@
     </scenes>
     <resources>
         <image name="qrcode.viewfinder" catalog="system" width="64" height="56"/>
+        <image name="square" width="276" height="276"/>
     </resources>
 </document>
