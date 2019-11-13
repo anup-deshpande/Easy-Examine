@@ -90,12 +90,12 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
                     // Check if status code is 200
                     if json["status"].stringValue == "200"{
                         
-                        self.name = "\(json["firstName"])"
+                        self.name = "\(json["firstName"]) \(json["lastName"])"
                         
                         // Store token in UserDefaults
                         let preferences = UserDefaults.standard
                         preferences.set(token, forKey: "Token")
-                        preferences.set("name", forKey: json["firstName"].stringValue)
+                        preferences.set(self.name, forKey: "Name")
                         
                         // Go to home controller
                         self.performSegue(withIdentifier: "QRCodeToHomeSegue", sender: nil)

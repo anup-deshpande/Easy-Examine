@@ -26,7 +26,7 @@ class HomeViewController: UIViewController {
         
         // Get token from preferences
         token = preferences.string(forKey: "Token")!
-        //name = preferences.string(forKey: "name")!
+        name = preferences.string(forKey: "Name")!
        
         if name != nil{
             nameLabel.text = name!
@@ -34,4 +34,26 @@ class HomeViewController: UIViewController {
         
     }
     
+    @IBAction func logoutButtonTapped(_ sender: UIButton) {
+           logOut()
+       }
+       
+       func logOut(){
+           // Delete Token from User Defaults
+           let prefereces = UserDefaults.standard
+           
+           DispatchQueue.main.async {
+               prefereces.set(nil, forKey: "Token")
+               prefereces.set(nil, forKey: "Name")
+               prefereces.synchronize()
+           }
+           
+           
+           // Send back to login controller
+           self.performSegue(withIdentifier: "goBackToLoginSegue", sender: nil)
+       }
+    
+    @IBAction func showResultButtonTapped(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "HomeToResultSegue", sender: nil)
+    }
 }

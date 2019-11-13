@@ -106,7 +106,8 @@ class teamQRCodeViewController: UIViewController,AVCaptureMetadataOutputObjectsD
                         
                         
                         // Go to home controller
-                        self.performSegue(withIdentifier: "teamQRCodeToJudgeSegue", sender: nil)
+                        //self.performSegue(withIdentifier: "teamQRCodeToJudgeSegue", sender: nil)
+                        self.performSegue(withIdentifier: "teamQRCodeToExaminerSegue", sender: nil)
                         
                         
                     }
@@ -140,6 +141,14 @@ class teamQRCodeViewController: UIViewController,AVCaptureMetadataOutputObjectsD
             destination.teamName = teamName
             destination.teamID = teamID
             
+        }
+        
+        if segue.identifier == "teamQRCodeToExaminerSegue"{
+            guard let teamName = teamName else {return}
+            
+            let destination = segue.destination as! ExamineViewController
+            destination.teamName = teamName
+            destination.teamID = teamID
         }
     }
     
