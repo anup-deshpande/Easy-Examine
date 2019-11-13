@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-scopingProject-scopingProjectUITests/Pods-scopingProject-scopingProjectUITests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Macaw/Macaw.framework
+${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

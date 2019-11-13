@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CAD59623F4222BC4EAF9CBF /* Pods_scopingProject_scopingProjectUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D0C27C461721806CB785D0 /* Pods_scopingProject_scopingProjectUITests.framework */; };
+		6E23EBF21DCF1291F7F1A989 /* Pods_scopingProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ABCE4169EA6A259D9AC326B /* Pods_scopingProjectTests.framework */; };
+		7685CEA923779D4A0076BCD4 /* evaluateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685CEA823779D4A0076BCD4 /* evaluateViewController.swift */; };
+		7685CEB0237B59690076BCD4 /* questionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685CEAF237B59690076BCD4 /* questionCollectionViewCell.swift */; };
+		7685CEB6237BEC7B0076BCD4 /* resultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685CEB5237BEC7B0076BCD4 /* resultsViewController.swift */; };
+		7685CEB8237BEDE20076BCD4 /* result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685CEB7237BEDE20076BCD4 /* result.swift */; };
+		7685CEBB237BEE640076BCD4 /* resultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7685CEBA237BEE640076BCD4 /* resultTableViewCell.swift */; };
 		76E1790423776282005C4528 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1790323776282005C4528 /* AppDelegate.swift */; };
 		76E1790623776282005C4528 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1790523776282005C4528 /* SceneDelegate.swift */; };
 		76E1790823776282005C4528 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1790723776282005C4528 /* loginViewController.swift */; };
@@ -16,6 +23,9 @@
 		76E1791B23776284005C4528 /* scopingProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1791A23776284005C4528 /* scopingProjectTests.swift */; };
 		76E1792623776284005C4528 /* scopingProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1792523776284005C4528 /* scopingProjectUITests.swift */; };
 		76E1793523777087005C4528 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1793423777087005C4528 /* QRCodeViewController.swift */; };
+		76E17973237780F1005C4528 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E17972237780F1005C4528 /* HomeViewController.swift */; };
+		76E1797523779ACD005C4528 /* teamQRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1797423779ACD005C4528 /* teamQRCodeViewController.swift */; };
+		AFA46E9D2785807E6D00203B /* Pods_scopingProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEF1F64AAA769B875372045F /* Pods_scopingProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BB4E70C38C2E5BB922E86CA /* Pods-scopingProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scopingProjectTests.release.xcconfig"; path = "Target Support Files/Pods-scopingProjectTests/Pods-scopingProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		1ABCE4169EA6A259D9AC326B /* Pods_scopingProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scopingProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB80C0AA8426F2B2B526A6C /* Pods-scopingProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scopingProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-scopingProjectTests/Pods-scopingProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		54A0792347ADC0C46035E325 /* Pods-scopingProject-scopingProjectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scopingProject-scopingProjectUITests.release.xcconfig"; path = "Target Support Files/Pods-scopingProject-scopingProjectUITests/Pods-scopingProject-scopingProjectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7685CEA823779D4A0076BCD4 /* evaluateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = evaluateViewController.swift; sourceTree = "<group>"; };
+		7685CEAF237B59690076BCD4 /* questionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionCollectionViewCell.swift; sourceTree = "<group>"; };
+		7685CEB5237BEC7B0076BCD4 /* resultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultsViewController.swift; sourceTree = "<group>"; };
+		7685CEB7237BEDE20076BCD4 /* result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = result.swift; sourceTree = "<group>"; };
+		7685CEBA237BEE640076BCD4 /* resultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resultTableViewCell.swift; sourceTree = "<group>"; };
 		76E1790023776282005C4528 /* scopingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scopingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E1790323776282005C4528 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76E1790523776282005C4528 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +70,13 @@
 		76E1792523776284005C4528 /* scopingProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scopingProjectUITests.swift; sourceTree = "<group>"; };
 		76E1792723776284005C4528 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76E1793423777087005C4528 /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		76E17972237780F1005C4528 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		76E1797423779ACD005C4528 /* teamQRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamQRCodeViewController.swift; sourceTree = "<group>"; };
+		84D0C27C461721806CB785D0 /* Pods_scopingProject_scopingProjectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scopingProject_scopingProjectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		877B3D49BA071C4F1C4B57F0 /* Pods-scopingProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scopingProject.debug.xcconfig"; path = "Target Support Files/Pods-scopingProject/Pods-scopingProject.debug.xcconfig"; sourceTree = "<group>"; };
+		AAABEB62A5039D907698D04C /* Pods-scopingProject-scopingProjectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scopingProject-scopingProjectUITests.debug.xcconfig"; path = "Target Support Files/Pods-scopingProject-scopingProjectUITests/Pods-scopingProject-scopingProjectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E486850C72973E92CEC44A68 /* Pods-scopingProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scopingProject.release.xcconfig"; path = "Target Support Files/Pods-scopingProject/Pods-scopingProject.release.xcconfig"; sourceTree = "<group>"; };
+		EEF1F64AAA769B875372045F /* Pods_scopingProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scopingProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFA46E9D2785807E6D00203B /* Pods_scopingProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E23EBF21DCF1291F7F1A989 /* Pods_scopingProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +100,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAD59623F4222BC4EAF9CBF /* Pods_scopingProject_scopingProjectUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7685CEAE237B593D0076BCD4 /* Collection View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7685CEAF237B59690076BCD4 /* questionCollectionViewCell.swift */,
+				7685CEBA237BEE640076BCD4 /* resultTableViewCell.swift */,
+			);
+			path = "Collection View Cells";
+			sourceTree = "<group>";
+		};
+		7685CEB9237BEDEA0076BCD4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7685CEB7237BEDE20076BCD4 /* result.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		76E178F723776281005C4528 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +131,8 @@
 				76E1791923776284005C4528 /* scopingProjectTests */,
 				76E1792423776284005C4528 /* scopingProjectUITests */,
 				76E1790123776282005C4528 /* Products */,
+				C080F16693AC1CFEAEC4A0A7 /* Pods */,
+				BE52A626B52DA4A68966A7C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +151,8 @@
 			children = (
 				76E1790323776282005C4528 /* AppDelegate.swift */,
 				76E1790523776282005C4528 /* SceneDelegate.swift */,
+				7685CEB9237BEDEA0076BCD4 /* Model */,
+				7685CEAE237B593D0076BCD4 /* Collection View Cells */,
 				76E17933237763D8005C4528 /* Controllers */,
 				76E1790923776282005C4528 /* Main.storyboard */,
 				76E1790C23776284005C4528 /* Assets.xcassets */,
@@ -135,8 +185,35 @@
 			children = (
 				76E1790723776282005C4528 /* loginViewController.swift */,
 				76E1793423777087005C4528 /* QRCodeViewController.swift */,
+				76E17972237780F1005C4528 /* HomeViewController.swift */,
+				76E1797423779ACD005C4528 /* teamQRCodeViewController.swift */,
+				7685CEA823779D4A0076BCD4 /* evaluateViewController.swift */,
+				7685CEB5237BEC7B0076BCD4 /* resultsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BE52A626B52DA4A68966A7C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EEF1F64AAA769B875372045F /* Pods_scopingProject.framework */,
+				84D0C27C461721806CB785D0 /* Pods_scopingProject_scopingProjectUITests.framework */,
+				1ABCE4169EA6A259D9AC326B /* Pods_scopingProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C080F16693AC1CFEAEC4A0A7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				877B3D49BA071C4F1C4B57F0 /* Pods-scopingProject.debug.xcconfig */,
+				E486850C72973E92CEC44A68 /* Pods-scopingProject.release.xcconfig */,
+				AAABEB62A5039D907698D04C /* Pods-scopingProject-scopingProjectUITests.debug.xcconfig */,
+				54A0792347ADC0C46035E325 /* Pods-scopingProject-scopingProjectUITests.release.xcconfig */,
+				3DB80C0AA8426F2B2B526A6C /* Pods-scopingProjectTests.debug.xcconfig */,
+				0BB4E70C38C2E5BB922E86CA /* Pods-scopingProjectTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +223,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76E1792A23776284005C4528 /* Build configuration list for PBXNativeTarget "scopingProject" */;
 			buildPhases = (
+				7F58D7C55DA6937416F57FD0 /* [CP] Check Pods Manifest.lock */,
 				76E178FC23776282005C4528 /* Sources */,
 				76E178FD23776282005C4528 /* Frameworks */,
 				76E178FE23776282005C4528 /* Resources */,
+				554F11CCAB83FFEEDE350251 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +242,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76E1792D23776284005C4528 /* Build configuration list for PBXNativeTarget "scopingProjectTests" */;
 			buildPhases = (
+				B598A9A1AFEF38BE1FF8B339 /* [CP] Check Pods Manifest.lock */,
 				76E1791223776284005C4528 /* Sources */,
 				76E1791323776284005C4528 /* Frameworks */,
 				76E1791423776284005C4528 /* Resources */,
@@ -181,9 +261,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 76E1793023776284005C4528 /* Build configuration list for PBXNativeTarget "scopingProjectUITests" */;
 			buildPhases = (
+				6ACE3666B4F6751483C48FA8 /* [CP] Check Pods Manifest.lock */,
 				76E1791D23776284005C4528 /* Sources */,
 				76E1791E23776284005C4528 /* Frameworks */,
 				76E1791F23776284005C4528 /* Resources */,
+				C0FA3A3B9E659C1599A9458B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -265,15 +347,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		554F11CCAB83FFEEDE350251 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scopingProject/Pods-scopingProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scopingProject/Pods-scopingProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scopingProject/Pods-scopingProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ACE3666B4F6751483C48FA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scopingProject-scopingProjectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F58D7C55DA6937416F57FD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scopingProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B598A9A1AFEF38BE1FF8B339 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scopingProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0FA3A3B9E659C1599A9458B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scopingProject-scopingProjectUITests/Pods-scopingProject-scopingProjectUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-scopingProject-scopingProjectUITests/Pods-scopingProject-scopingProjectUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-scopingProject-scopingProjectUITests/Pods-scopingProject-scopingProjectUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		76E178FC23776282005C4528 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E17973237780F1005C4528 /* HomeViewController.swift in Sources */,
+				7685CEA923779D4A0076BCD4 /* evaluateViewController.swift in Sources */,
+				7685CEBB237BEE640076BCD4 /* resultTableViewCell.swift in Sources */,
+				7685CEB8237BEDE20076BCD4 /* result.swift in Sources */,
+				76E1797523779ACD005C4528 /* teamQRCodeViewController.swift in Sources */,
 				76E1790823776282005C4528 /* loginViewController.swift in Sources */,
+				7685CEB0237B59690076BCD4 /* questionCollectionViewCell.swift in Sources */,
 				76E1790423776282005C4528 /* AppDelegate.swift in Sources */,
 				76E1793523777087005C4528 /* QRCodeViewController.swift in Sources */,
 				76E1790623776282005C4528 /* SceneDelegate.swift in Sources */,
+				7685CEB6237BEC7B0076BCD4 /* resultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,10 +636,11 @@
 		};
 		76E1792B23776284005C4528 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 877B3D49BA071C4F1C4B57F0 /* Pods-scopingProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LJJVPNZGCW;
+				DEVELOPMENT_TEAM = 59XJFY72WQ;
 				INFOPLIST_FILE = scopingProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,10 +655,11 @@
 		};
 		76E1792C23776284005C4528 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E486850C72973E92CEC44A68 /* Pods-scopingProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LJJVPNZGCW;
+				DEVELOPMENT_TEAM = 59XJFY72WQ;
 				INFOPLIST_FILE = scopingProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -480,6 +674,7 @@
 		};
 		76E1792E23776284005C4528 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DB80C0AA8426F2B2B526A6C /* Pods-scopingProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +697,7 @@
 		};
 		76E1792F23776284005C4528 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BB4E70C38C2E5BB922E86CA /* Pods-scopingProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -524,6 +720,7 @@
 		};
 		76E1793123776284005C4528 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAABEB62A5039D907698D04C /* Pods-scopingProject-scopingProjectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -544,6 +741,7 @@
 		};
 		76E1793223776284005C4528 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54A0792347ADC0C46035E325 /* Pods-scopingProject-scopingProjectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

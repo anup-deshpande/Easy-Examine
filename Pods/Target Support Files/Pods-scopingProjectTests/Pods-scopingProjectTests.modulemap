@@ -1,0 +1,6 @@
+framework module Pods_scopingProjectTests {
+  umbrella header "Pods-scopingProjectTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

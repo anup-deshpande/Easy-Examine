@@ -8,12 +8,20 @@
 
 import UIKit
 import AVFoundation
+import Alamofire
+import SwiftyJSON
 
 class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate
 
 {
+    
+    //MARK: API URL Declarations
+    var getJudgeProfileAPI = "http://ec2-54-86-229-201.compute-1.amazonaws.com/api/scoping/getJudgeProfile"
+    
     @IBOutlet weak var square: UIImageView!
     var video = AVCaptureVideoPreviewLayer()
+    var name:String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,7 +46,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         output.metadataObjectTypes = [AVMetadataObject.ObjectType.qr]
         
         video = AVCaptureVideoPreviewLayer(session: session)
-        video.frame = view.layer.bounds
+        video.frame = view.frame
         view.layer.addSublayer(video)
         
         self.view.bringSubviewToFront(square)
@@ -47,6 +55,7 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
         
 
     }
+    
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
          if metadataObjects != nil && metadataObjects.count != 0
          {
@@ -54,15 +63,74 @@ class QRCodeViewController: UIViewController, AVCaptureMetadataOutputObjectsDele
             {
                 if object.type == AVMetadataObject.ObjectType.qr
                 {
-                    let alert = UIAlertController(title: "QR Code", message: object.stringValue, preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Retake", style: .default, handler: nil))
-                    alert.addAction(UIAlertAction(title: "Copy", style: .default, handler: { (nil) in
-                        UIPasteboard.general.string = object.stringValue
-                    }))
                     
-                    present(alert,animated: true,completion: nil)
+                    getJudgeInformation(for: object.stringValue!)
+                    
                 }
             }
+        }
+    }
+    
+    
+    func getJudgeInformation(for token:String){
+        let headers: HTTPHeaders = [
+            "token": token
+        ]
+        
+        AF.request(getJudgeProfileAPI,
+                   method: .get,
+                   encoding: JSONEncoding.default,
+                   headers: headers)
+            .responseJSON { response in
+                
+                switch response.result{
+                case .success(let value):
+                    let json = JSON(value)
+                    
+                    // Check if status code is 200
+                    if json["status"].stringValue == "200"{
+                        
+                        self.name = "\(json["firstName"])"
+                        
+                        // Store token in UserDefaults
+                        let preferences = UserDefaults.standard
+                        preferences.set(token, forKey: "Token")
+                        preferences.set("name", forKey: json["firstName"].stringValue)
+                        
+                        // Go to home controller
+                        self.performSegue(withIdentifier: "QRCodeToHomeSegue", sender: nil)
+                        
+                        
+                    }
+                    else if json["status"].stringValue == "401"{
+                        
+                        print(json["message"].stringValue)
+                    }
+                    else if json["status"].stringValue == "400"{
+                        
+                        print(json["message"].stringValue)
+                    }
+                        
+                    else{
+                        print("Error Occured")
+                    }
+                    break
+                    
+                case .failure(let error):
+                    print(error)
+                    break
+                }
+                
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier ==  "QRCodeToHomeSegue"{
+            guard let name = name else {return}
+            
+            let destination = segue.destination as! HomeViewController
+            destination.name = name
+            
         }
     }
     
