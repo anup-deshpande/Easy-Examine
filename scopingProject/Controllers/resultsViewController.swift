@@ -14,6 +14,7 @@ class resultsViewController: UIViewController {
 
     @IBOutlet weak var resultTableView: UITableView!
     
+    let refreshControl = UIRefreshControl()
     let preferences = UserDefaults.standard
     var token: String?
     var resultList = [result]()
@@ -34,6 +35,23 @@ class resultsViewController: UIViewController {
         token = preferences.string(forKey: "Token")!
         
        // Get result from the database
+        getTeamScores()
+        
+        // Add Refresh Control to Table View
+        if #available(iOS 10.0, *) {
+            resultTableView.refreshControl = refreshControl
+        } else {
+            resultTableView.addSubview(refreshControl)
+        }
+        
+        
+        // Configure Refresh Control
+        refreshControl.addTarget(self, action: #selector(refreshTeamScores(_:)), for: .valueChanged)
+    }
+    
+    
+    @objc private func refreshTeamScores(_ sender: Any) {
+        // Fetch team scores
         getTeamScores()
     }
     
@@ -61,7 +79,7 @@ class resultsViewController: UIViewController {
                         for i in 0..<json["team"].count{
                             self.resultList.append(result(json["team"][i]["name"].stringValue, json["team"][i]["finalScore"].stringValue))
                         }
-                        
+                        self.refreshControl.endRefreshing()
                         self.resultTableView.reloadData()
                         
                     }
